@@ -6,10 +6,52 @@
         <title>PackPoint</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="styles/styles.css">
     </head>
+        <form action = "" method = "POST">
+            <input type = "text" name = "username" placeholder = "username">
+            <input type = "text" name = "password" placeholder = "password">
+        </form>
     <body>
-        
-        <script src="scripts/index.js" async defer></script>
+    <div class="hero">
+        <nav>
+            <img src="images/logo.png" class ="logo">
+            <ul>
+                <li><a href = "">Profile</a></li>
+                <li><a href = "">Settings</a></li>
+                <li><a href = "">temp1</a></li>
+                <li><a href = "">temp2</a></li>
+            </ul>
+            <button type = "button">click here</button>
+        </nav>
+
+        <div class = "text-container">
+            <h1>Pack Point</h1>
+            <p>Never Lose your Pack.</p>
+            <a href = "">Find nearby Packs</a>
+        </div>
+    </div>
+    <button id = "myBtn" type = "button">Click Me!</button>
+        <script>
+            // Create a button element
+            const button = document.createElement('button')
+
+            // Set the button text to 'Can you click me?'
+            button.innerText = 'Can you click me?'
+
+            button.id = 'mainButton'
+
+            // Attach the "click" event to your button
+            button.addEventListener('click', () => {
+                // When there is a "click"
+                // it shows an alert in the browser
+                alert('Oh, you clicked me!')
+            })
+
+            document.body.appendChild(button)
+        </script>
+<!--        <script src="scripts/index.js" async defer></script>-->
+
+
     </body>
 </html>

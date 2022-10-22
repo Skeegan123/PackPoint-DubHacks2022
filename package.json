@@ -1,0 +1,19 @@
+{
+  "name": "packpoint",
+  "version": "1.0.0",
+  "description": "The Front-End website for PackPoint",
+  "main": "scripts/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skeegan123/PackPoint.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Skeegan123/PackPoint/issues"
+  },
+  "homepage": "https://github.com/Skeegan123/PackPoint#readme"
+}

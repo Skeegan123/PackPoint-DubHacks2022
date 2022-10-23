@@ -20,7 +20,7 @@ body {
 
 #index {
     box-sizing: border-box;
-    padding: 7% 1.5%;
+    padding: 7% 4.2%;
 }
 
 #index #search #myInput{
@@ -256,7 +256,7 @@ body {
     padding-top: 0;
     font-weight: 600;
     font-size: 1.1em;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 #post #description {
@@ -267,11 +267,14 @@ body {
     border: 2px solid #4B2E83;
     border-radius: 8px;
     margin-bottom: 0;
-    height: 200px;
+    height: 100px;
 }
 
 #post #next {
-    margin-top:150px;
+    display: block;
+    margin-top:25px;
+    margin-left: auto;
+    margin-right: auto;
     width: 352px;
     height: 49px;
     font-family: "Montserrat", Helvetica, Arial, sans-serif;
@@ -282,6 +285,13 @@ body {
     border: none;
     border-radius: 50px;
 }
+
+.stickyfoot {
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 20px;
+    padding-bottom: 50px;}
 
 #post #divider {
     border-bottom: 2px solid #4B2E83;
@@ -347,5 +357,5 @@ body {
     background-color: #4B2E83;
     border: none;
     border-radius: 50px;
-
+}
 /* Map Styles */

@@ -7,69 +7,22 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
-    <body id="login">
-        <!-- Start Page  -->
-        <div id="start">
+    <body>
+        <!-- Login -->
+        <div class ="onboarding">
+        <div id="small-logo">
             <img src = 'images/logo.png'>
-            <h1>Never lose your pack.</h1>
+            <h1>PackPoint</h1>
         </div>
-
-        <!-- Onboarding 1 -->
-        <div class ="onboarding">
-            <div id="small-logo">
-                <img src = 'images/logo.png'>
-                <h1>PackPoint</h1>
-            </div>
-            <img src = 'images/onboarding-1.png' class = "onboarding-image">
-            <h2>Find hidden points on <br> our campus.</h2>
-            <div class = "dot-navigation">
-                <a href="http://www.google.com" target="_parent"><button>Click me !</button></a>
-                <div class = "dot-navigation__item--active"></div>
-                <div class = "dot-navigation__item"></div>
-                <div class = "dot-navigation__item"></div>
-            </div>
-            <div class = "buttons">
-                <div class = buttons-getst>Get Started</div>
-                <div class = buttons-login>Log In</div>
-            </div>
-        </div>
-        <!-- Onboarding 2 -->
-        <div class ="onboarding">
-            <div id="small-logo">
-                <img src = 'images/logo.png'>
-                <h1>PackPoint</h1>
-            </div>
-            <img src = 'images/onboarding-2.png' class = "onboarding-image">
-            <h2>Share your favorite <br> points with the Husky <br> community.</h2>
-            <div class = "dot-navigation">
-                <div class = "dot-navigation__item--active"></div>
-                <div class = "dot-navigation__item--active"></div>
-                <div class = "dot-navigation__item"></div>
-            </div>
-        </div>
-        <!-- Onboarding 3 -->
-        <div class ="onboarding">
-            <div id="small-logo">
-                <img src = 'images/logo.png'>
-                <h1>PackPoint</h1>
-            </div>
-            <img src = 'images/onboarding-3.png' class = "onboarding-image">
-            <h2>Check current status <br> of PackPoints via Live <br> Chat.</h2>
-            <div class = "dot-navigation">
-                <div class = "dot-navigation__item--active"></div>
-                <div class = "dot-navigation__item--active"></div>
-                <div class = "dot-navigation__item--active"></div>
-            </div>
-        </div>
-
-        <div class="email">
-            <div id="small-logo">
-                <img src = 'images/logo.png'>
-                <h1>PackPoint</h1>
-            <h1>Enter your email to <br> find your pack.</h1>
-        </div>
-
-        <script src="" async defer></script>
+        <h3>Enter your Email to <br> find your pack:</h3>
+        <label for="email">Email:</label>
+        <input type="email" id="email"
+               pattern=".+@globex\.com" size="30" required>
+    </div>
+    <div class = "buttons">
+        <a href="index.html"><div class = "buttons-next">Next</div></a>
+    </div>
     </body>
 </html>

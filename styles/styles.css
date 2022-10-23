@@ -20,7 +20,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 10%;
+    width: 100px;
 }
 
 #start h1 {
@@ -56,6 +56,13 @@ body {
     text-align: center;
     color:#4B2E83;
     font-size: 15px;
+}
+
+.onboarding h3{
+    text-align: left;
+    color:black;
+    font-size: 20px;
+    padding-top: 45%;
 }
 
 .dot-navigation {
@@ -123,6 +130,7 @@ body {
 
 .buttons-next{
     display: block;
+    padding-left: 100px;
     margin-left: auto;
     margin-right: auto;
     text-decoration: none;
@@ -141,3 +149,10 @@ body {
 
 
 /* Post Styles */
+
+
+/* Map Styles */
+#map{
+    height: 700px;
+    width: 100%;
+}

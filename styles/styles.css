@@ -1,13 +1,54 @@
 /* Main CSS */
 
 body {
+    width: auto;
+    font-size: 12px;
     background-color: white;
+    color: #353535;
     font-family: "Montserrat", Helvetica, Arial, sans-serif;
 }
 
 
 /* Index Styles */
 
+#index {
+    box-sizing: border-box;
+    padding: 7% 1.5%;
+}
+
+#index #search #myInput{
+    background-image: url('/icons/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 9px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 82%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 10px 20px 10px 40px; /* Add some padding */
+    border: 2px solid #4B2E83; /* Add a grey border */
+    border-radius: 8px;
+    margin-bottom: 12px; /* Add some space below the input */
+}
+
+#index h1 {
+    margin-top: 1%;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+#index em {
+    font-style: normal;
+    color: #4B2E83;
+}
+
+#index #map {
+    padding: 40%;
+    background-color: #4B2E83;
+    border-radius: 15px;
+}
+
+#index h2 {
+    font-size: 22px;
+    font-weight: 700;
+}
 
 /* Login Styles */
  

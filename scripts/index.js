@@ -6,9 +6,11 @@ function handleFormSubmit(event) {
     const data = new FormData(event.target);
     
     const formJSON = Object.fromEntries(data.entries());
+
+    formJSON.amenities = data.getAll('amenities');
   
     // for multi-selects, we need special handling
-    // formJSON.snacks = data.getAll('snacks');
+    formJSON.tags = data.getAll('tags');
 
     ws.send(JSON.stringify(formJSON, null, 2));
   }
@@ -17,6 +19,6 @@ function handleFormSubmit(event) {
     console.log(event.data);
   };
   
-  const form = document.querySelector('#myForm');
+  const form = document.querySelector('#post-popup');
   form.addEventListener('submit', handleFormSubmit);
   

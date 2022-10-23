@@ -1,20 +1,22 @@
-const http = require('http');
+const ws = new WebSocket('ws://localhost:3000');
 
-const hostname = '127.0.0.1';
-const port = 3000;
+function handleFormSubmit(event) {
+    event.preventDefault();
+    
+    const data = new FormData(event.target);
+    
+    const formJSON = Object.fromEntries(data.entries());
+  
+    // for multi-selects, we need special handling
+    // formJSON.snacks = data.getAll('snacks');
 
+    ws.send(JSON.stringify(formJSON, null, 2));
+  }
 
-const server = http.createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    res.button;
-    res.end('Test');
-});
-
-server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
-});
-
-
-
-
+  ws.onmessage = function (event) {
+    console.log(event.data);
+  };
+  
+  const form = document.querySelector('#myForm');
+  form.addEventListener('submit', handleFormSubmit);
+  

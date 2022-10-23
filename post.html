@@ -6,10 +6,134 @@
         <title>Make a Point!</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
-        
-        <script src="" async defer></script>
+        <div id="post">
+            <div id="top">
+                <img>
+                <h1>New PackPoint</h1>
+            </div>
+            <div id="divider"></div>
+            <form id="post-popup">
+                <div id="part1">
+                    <div id="photoUpload">
+                        <div>
+                            <label for="pointImage">Take photo</label>
+                            <input type="file" id="pointImage" name="pointImage">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="pointImage">Select photo</label>
+                            <input type="file" id="pointImage" name="pointImage">
+                        </div>
+                    </div>
+                    <br>
+                    <label for="location-name" class="label">Location Name</label>
+                    <br>
+                    <input type="text" name="location-name" id="location-name">
+                    <p>For example: Founder's Hall</p>
+                    <label for="location-description" class="label">Description</label>
+                    <br>
+                    <textarea name="location-description" id="description"></textarea>
+                    <br>
+                    <button type="button" onclick="handleFormPartChange()" id="next" value="next" name="next">Next</button>
+                </div>
+                <div id="part2" class="hidden">
+                    <label for="noise-level">Noise Level:</label>
+                    <select id="noise-level" name="noise-level">
+                        <option>Required</option>
+                        <option value="Quiet">Quiet</option>
+                        <option value="Moderate">Moderate</option>
+                        <option value="Loud">Loud</option>
+                    </select>
+                    <br>
+                    <label for="crowd-level">Crowd Level:</label>
+                    <select id="crowd-level" name="crowd-level">
+                        <option>Required</option>
+                        <option value="Not Busy">Not Busy</option>
+                        <option value="Moderately Busy">Moderately Busy</option>
+                        <option value="Very Busy">Very Busy</option>
+                    </select>
+                    <br>
+                    <label for="IDrequired">ID Requirement:</label>
+                    <select list="IDrequired" id="IDrequired" name="IDrequired">
+                        <option>Required</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                    <br>
+                    <label for="wifi">Wifi Access:</label>
+                    <select id="wifi" name="wifi">
+                        <option>Required</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                    <br>
+                    <label for="amenities">Amenities:</label>
+                    <select id="amenities" name="amenities" multiple>
+                        <option value="Restrooms">Restrooms</option>
+                        <option value="Food">Food</option>
+                        <option value="Drinks">Drinks</option>
+                        <option value="Study Space">Study Space</option>
+                        <option value="Power Outlets">Power Outlets</option>
+                        <option value="Printing">Printing</option>
+                        <option value="Whiteboards">Whiteboards</option>
+                        <option value="Computers">Computers</option>
+                        <option value="TV">TV</option>
+                    </select>
+                    <br>
+                    <h2>Tags</h2>
+                    <div id="tags-container">
+                        <input class="tag-checkbox" id="tag-bathroom" name="tags" type="checkbox" class="check" value="Bathroom"/>
+                        <label for="tag-bathroom" class="tags-list">
+                            Bathroom
+                        </label>
+                        <input class="tag-checkbox" id="tag-cafe" name="tags" type="checkbox" value="Cafe"/>
+                        <label for="tag-cafe" class="tags-list">
+                            Cafe
+                        </label>
+                        <input class="tag-checkbox" id="tag-indoor" name="tags" type="checkbox" value="Indoor"/>
+                        <label for="tag-indoor" class="tags-list">
+                            Indoor
+                        </label>
+                        <input class="tag-checkbox" id="tag-loud" name="tags" type="checkbox" value="Loud"/>
+                        <label for="tag-loud" class="tags-list">
+                            Loud
+                        </label>
+                        <input class="tag-checkbox" id="tag-lounge" name="tags" type="checkbox" value="Lounge"/>
+                        <label for="tag-lounge" class="tags-list">
+                            Lounge
+                        </label>
+                        <input class="tag-checkbox" id="tag-outdoor" name="tags" type="checkbox" value="Outdoor"/>
+                        <label for="tag-outdoor" class="tags-list">
+                            Outdoor
+                        </label>
+                        <input class="tag-checkbox" id="tag-quiet" name="tags" type="checkbox" value="Quiet"/>
+                        <label for="tag-quiet" class="tags-list">
+                            Quiet
+                        </label>
+                        <input class="tag-checkbox" id="tag-restaurant" name="tags" type="checkbox" value="Restaurant"/>
+                        <label for="tag-restaurant" class="tags-list">
+                            Restaurant
+                        </label>
+                        <input class="tag-checkbox" id="tag-scenery" name="tags" type="checkbox" value="Scenery"/>
+                        <label for="tag-scenery" class="tags-list">
+                            Scenery
+                        </label>
+                        <input class="tag-checkbox" id="tag-studyspace" name="tags" type="checkbox" value="Study Space"/>
+                        <label for="tag-studyspace" class="tags-list">
+                            Study Space
+                        </label>
+                    </div>
+                    <br>
+                    <button id="submit" value="submit" name="submit">Share</button>
+                </div>
+            </form>
+        </div>
+        <script src="scripts/post.js" async defer></script>
     </body>
 </html>

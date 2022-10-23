@@ -63,6 +63,17 @@ body {
     font-weight: 700;
 }
 
+#index #divider {
+    border-top: 2px solid #4B2E83;
+    margin-top: 25px;
+    padding-top: 200px;
+}
+
+.stickyfoot {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* Login Styles */
 #start {
     background-color:#ECD6FF;
@@ -347,5 +358,6 @@ body {
     background-color: #4B2E83;
     border: none;
     border-radius: 50px;
+}
 
 /* Map Styles */

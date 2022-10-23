@@ -170,6 +170,8 @@ body {
     margin: 0 0.25rem;
 }
 
+
+
 .buttons-getst{
     text-decoration: none;
     background: #4B2E83;
@@ -179,6 +181,7 @@ body {
     font-size: 18px;
     margin-top: 30px;
     border-radius: 30px;
+    right: 50%;
 }
 
 .buttons-login{
@@ -191,6 +194,7 @@ body {
     margin-top: 30px;
     border: 2px solid #4B2E83;
     border-radius: 50px;
+    left: 40%;
 }
 
 .buttons-next{
@@ -207,6 +211,12 @@ body {
     margin-top: 30px;
     border-radius: 30px;
     text-align: center;
+    margin: 0;
+    position: absolute;
+    left: 35%;
+    top: 90%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 /* Profile Styles */
